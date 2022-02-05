@@ -70,9 +70,11 @@ const CryptoDetails = () => {
            {time.map((date) => <Option key={date}>{date}</Option>)}
 
        </Select>
-      <LineChart coinHistory={coinHistory} currentPrice={millify(cryptoDetails.price)} coinName={cryptoDetails.name} />
 
-       <Col className="stats-container">
+      <LineChart coinHistory={coinHistory} currentPrice={millify(cryptoDetails?.price)} coinName={cryptoDetails?.name} />
+
+       <Col className="stats-container">  
+
          <Col className="coin-value-statistics">
            <Col className="coin-value-statistics-heading">
              <Title level={3} className="coin-detailes-heading">
@@ -113,6 +115,7 @@ const CryptoDetails = () => {
            ))}
          </Col>
        </Col>
+
        <Col className="coin-desc-link">
          <Row className="coin-desc">
            <Title level={3} className="coin-details-heading">
@@ -131,6 +134,7 @@ const CryptoDetails = () => {
            ))}
          </Col>
        </Col>
+
     </Col>
   )
 };
