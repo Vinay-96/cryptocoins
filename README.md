@@ -7,4 +7,4 @@
    <li>View latest news about crypto's</li>
    <li>Search and find your favourite crypto across the world</li>
 </ol>
-   <b><a herf="https://reactcryptoverseapp.netlify.app">visit now</a></b>
+
